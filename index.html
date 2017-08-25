@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pomodoro Clock - Kristen Goehringer</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+		<script
+		src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+		crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="clock-box">
+				<div class="session-clock"></div>
+				<h3 class="time-period">Session</h3>
+				<div class="set-time-box">
+					<div class="session-list">
+					<ul>
+						<li>Session</li>
+						<li><span id="s-min">-</span> 25 <span id="s-plus">+</span></li>
+					</ul>
+				</div>
+				<div class="break-list">
+					<ul>
+						<li>Break</li>
+						<li><span id="b-min">-</span> 5 <span id="b-plus">+</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+		<script type="text/javascript">
+			var clock = $('.session-clock').FlipClock(3000, {
+				countdown: true,
+				clockFace: 'MinuteCounter'
+			});
+		</script>
+		<script src="script.js"></script>
+	</body>
+</html>
