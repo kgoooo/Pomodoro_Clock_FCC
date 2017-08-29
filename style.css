@@ -9,6 +9,7 @@ body {
 	width: 360px;
 	background: #282828;
 	border-radius: 10px;
+	margin: 35px auto 35px auto;
 }
 
 .flip-clock-divider .flip-clock-label{
@@ -17,18 +18,19 @@ body {
 
 h3 {
 	text-align: center;
-	font-size: 34px;
-	background: #ff00cc;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-size: 40px;
+	background: #00C9FF;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	margin-bottom: 10px;
+	margin-top: 20px;
 }
 
 h3:after {
 	display: block;
-	height: 2px;
+	height: 4px;
 	background: #777;
 	content: " ";
 	width: 200px;
@@ -41,28 +43,71 @@ ul {
 	padding: 0;
 }
 
+p {
+	margin: 20px 0;
+}
+
+i {
+	color: #12D8FA;
+	font-size: 30px;
+	cursor: pointer;
+	transition: all 900ms ease;
+}
+
+i:hover {
+	color: #54FFC8;
+}
+
 .set-time-box {
 	display: flex;
 	justify-content: center;
 	font-size: 20px;
 }
 
-.session-list {
+.flip-clock-wrapper {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.session-list,
+.break-list{
 	margin-right: 15px;
+	text-align: center;
 }
 
-.break-list {
-	margin-left: 15px;
+
+.btn {
+	font-size: 18px;
+	font-family: 'Titillium Web', sans-serif;	
+	background: none;
+	border: 1px solid #888;
+	color: #12D8FA;
+	border-radius: 25px;
+	padding: 3px 15px;
+	margin: 0 5px 0 5px;
+	outline: none;
+	cursor: pointer;
+	transition: border 500ms ease;
+}
+.btn:hover {
+	border: 1px solid #A6FFCB;	
 }
 
-#s-min,
-#b-min{
-	color: #ff00cc;
-	font-size: 30px;
+
+.button-box {
+	margin-bottom: 25px;
+	margin-top: 20px;
+	text-align: center
 }
 
-#s-plus,
-#b-plus {
-	color: #7E3399;
-	font-size: 30px;	
+
+#start {
+	font-size: 18px;
+
+}
+
+#time {
+	font-size: 75px;
+	text-align: center;
+	font-weight: bold;
 }

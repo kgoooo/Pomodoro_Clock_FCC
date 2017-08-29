@@ -6,6 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+		rel="stylesheet">
 		<link href="style.css" rel="stylesheet">
 		<script
 		src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -16,32 +18,41 @@
 	<body>
 		<div class="container">
 			<div class="clock-box">
-				<div class="session-clock"></div>
+				<!-- <div class="session-clock"></div> -->
+				<div class="time">
+					<p id="time">25:00</p>
+					<!-- <canvas id="canvas" width="300" height="300"></canvas> -->
+				</div>
 				<h3 class="time-period">Session</h3>
 				<div class="set-time-box">
 					<div class="session-list">
 					<ul>
 						<li>Session</li>
-						<li><span id="s-min">-</span> 25 <span id="s-plus">+</span></li>
+						<li><i id="s-min"class="material-icons">arrow_downward</i> <span id="session-value">25</span> <i id="s-plus"class="material-icons">arrow_upward</i></li>
 					</ul>
 				</div>
 				<div class="break-list">
 					<ul>
 						<li>Break</li>
-						<li><span id="b-min">-</span> 5 <span id="b-plus">+</span></li>
+						<li><i id="b-min"class="material-icons">arrow_downward</i> <span id="break-value">5</span> <i id="b-plus"class="material-icons">arrow_upward</i></li>
 					</ul>
 				</div>
+			</div>
+			<div class="button-box">
+				<button id="start" class="btn">Start</button>
+				<button id="reset" class="btn">Reset</button>
 			</div>
 		</div>
 	</div>
 	
 
-		<script type="text/javascript">
+		<!-- <script type="text/javascript">
 			var clock = $('.session-clock').FlipClock(3000, {
 				countdown: true,
+				autoPlay: false,
 				clockFace: 'MinuteCounter'
 			});
-		</script>
+		</script> -->
 		<script src="script.js"></script>
 	</body>
 </html>
