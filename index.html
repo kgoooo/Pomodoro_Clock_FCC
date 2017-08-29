@@ -8,6 +8,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 		rel="stylesheet">
+		<audio id="buzzer" src="http://codingtutorials360.com/14244764.mp3" type="audio/mpeg"></audio>		
 		<link href="style.css" rel="stylesheet">
 		<script
 		src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -19,11 +20,11 @@
 		<div class="container">
 			<div class="clock-box">
 				<!-- <div class="session-clock"></div> -->
-				<div class="time">
-					<p id="time">25:00</p>
+				<div>
+					<p id="time"><span id="mins">25</span>:<span id="secs">00</span></p>
 					<!-- <canvas id="canvas" width="300" height="300"></canvas> -->
 				</div>
-				<h3 class="time-period">Session</h3>
+				<h3 class="time-period"><span id="heading"></span></h3>
 				<div class="set-time-box">
 					<div class="session-list">
 					<ul>
@@ -53,6 +54,6 @@
 				clockFace: 'MinuteCounter'
 			});
 		</script> -->
-		<script src="script.js"></script>
+		<script src="script_2.js"></script>
 	</body>
 </html>
